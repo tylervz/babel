@@ -319,7 +319,7 @@ export default class OptionManager {
    * or a module name to require.
    */
   resolvePresets(presets: Array<string | Object>, dirname: string, onResolve?) {
-    return presets.map(val => {
+    return presets.map((val) => {
       let options;
       if (Array.isArray(val)){
         [val, options] = val;

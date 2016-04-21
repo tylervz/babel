@@ -48,14 +48,14 @@ export const stagePlugins = [
 ];
 
 export default function(opts) {
-  var loose = false;
+  let loose = false;
   if (opts !== undefined){
     if (opts.loose !== undefined) loose = opts.loose;
   }
 
   if (typeof loose !== "boolean") throw new Error("Preset es2015 'loose' option must be a boolean.");
 
-};
+}
 
 export const environments = {
   android: {
@@ -143,10 +143,10 @@ export const environments = {
     },
   },
   node: {
-    '0.10': {
+    "0.10": {
 
     },
-    '0.12': {
+    "0.12": {
 
     },
     4: {

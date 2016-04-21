@@ -1,4 +1,4 @@
-module.exports = function(opts){
+module.exports = function(opts) {
   let loose = false;
   let modules = true;
   if (opts !== undefined){
@@ -11,26 +11,26 @@ module.exports = function(opts){
 
   return {
     plugins: [
-      [require("babel-plugin-transform-es2015-template-literals"), {loose: loose}],
+      [require("babel-plugin-transform-es2015-template-literals"), { loose }],
       require("babel-plugin-transform-es2015-literals"),
       require("babel-plugin-transform-es2015-function-name"),
       require("babel-plugin-transform-es2015-arrow-functions"),
       require("babel-plugin-transform-es2015-block-scoped-functions"),
-      [require("babel-plugin-transform-es2015-classes"), {loose: loose}],
+      [require("babel-plugin-transform-es2015-classes"), { loose }],
       require("babel-plugin-transform-es2015-object-super"),
       require("babel-plugin-transform-es2015-shorthand-properties"),
-      [require("babel-plugin-transform-es2015-computed-properties"), {loose: loose}],
-      [require("babel-plugin-transform-es2015-for-of"), {loose: loose}],
+      [require("babel-plugin-transform-es2015-computed-properties"), { loose }],
+      [require("babel-plugin-transform-es2015-for-of"), { loose }],
       require("babel-plugin-transform-es2015-sticky-regex"),
       require("babel-plugin-transform-es2015-unicode-regex"),
       require("babel-plugin-check-es2015-constants"),
-      [require("babel-plugin-transform-es2015-spread"), {loose: loose}],
+      [require("babel-plugin-transform-es2015-spread"), { loose }],
       require("babel-plugin-transform-es2015-parameters"),
-      [require("babel-plugin-transform-es2015-destructuring"), {loose: loose}],
+      [require("babel-plugin-transform-es2015-destructuring"), { loose }],
       require("babel-plugin-transform-es2015-block-scoping"),
       require("babel-plugin-transform-es2015-typeof-symbol"),
     ].concat(modules ? [
-      [require("babel-plugin-transform-es2015-modules-commonjs"), {loose: loose}],
+      [require("babel-plugin-transform-es2015-modules-commonjs"), { loose }],
     ] : []).concat([
       [require("babel-plugin-transform-regenerator"), { async: false, asyncGenerators: false }],
     ]),
