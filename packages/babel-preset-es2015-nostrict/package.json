@@ -1,6 +1,6 @@
 {
   "name": "babel-preset-es2015-nostrict",
-  "version": "6.6.1",
+  "version": "6.6.2",
   "description": "Babel preset for all es2015 plugins, without global 'use strict' statement.",
   "author": "Alex Kotenko <alexykot@gmail.com>",
   "homepage": "https://babeljs.io/",
